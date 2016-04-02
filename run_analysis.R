@@ -45,4 +45,4 @@ traindata <- cbind(as.data.table(subjectrain), ytrain, xtrain)
 
 mergeddata <- rbind(testdata,traindata)
 
-write.table(mergeddata, file = "../tidy_data.txt")
+write.table(mergeddata, row.names = FALSE, file = "../tidyDataSet.txt")
